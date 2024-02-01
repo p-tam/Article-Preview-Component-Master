@@ -1,0 +1,226 @@
+:root {
+    --color-very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --color-desaturated-dark-blue: hsl(214, 17%, 51%);
+    --color-grayish-blue: hsl(212, 23%, 69%);
+    --color-light-grayish-blue: hsl(210, 46%, 95%);
+
+    --font-size: 0.813rem;
+    --fw-medium: 500;
+    --fw-bold: 700;
+
+    --ff: 'Manrope', sans-serif;
+}
+
+body {
+    background-color: var(--color-light-grayish-blue);
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: var(--ff);
+}
+
+article {
+    width: 327px;
+    background-color: white;
+    margin-top: 100px;
+    border-radius: 8px;
+    overflow: visible;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+h1,
+h2 {
+    color: var(--color-very-dark-grayish-blue);
+    font-weight: var(--fw-bold);
+    font-size: 1.3rem;
+}
+
+h2 {
+    font-size: 0.75rem;
+    margin: 0;
+}
+
+p {
+    font-size: var(--font-size);
+    color: var(--color-desaturated-dark-blue);
+    line-height: 20px;
+    letter-spacing: 0.122px;
+    margin: 0;
+}
+
+.center-elements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img {
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.card-img img {
+    width: 100%;
+}
+
+.main-content {
+    margin-inline: 40px;
+    margin-block: 15px;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+    position: relative;
+    
+}
+
+.name-and-date-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+.name-and-date-container p {
+    color: var(--color-grayish-blue);
+}
+
+.author-img {
+    width: 40px;
+    margin-right: 10px;
+    margin-left: 40px;
+}
+
+.author-img img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+button {
+    border: none;
+}
+
+.popup-background {
+    height: 60px;
+    background-color: var(--color-very-dark-grayish-blue);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.share-icon-popup {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.share-icon-container {
+    background-color: var(--color-light-grayish-blue);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 30px;
+    position: relative;
+}
+
+.desaturated-dark-blue-background {
+    background-color: var(--color-desaturated-dark-blue);
+}
+
+.very-dark-blue-background {
+    background-color: var(--color-very-dark-grayish-blue);
+}
+
+.icon-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.icons {
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
+
+}
+
+.icon-container p {
+    color: var(--color-light-grayish-blue);
+    letter-spacing: 5px;
+}
+
+.author-details {
+    display: flex;
+}
+
+.arrow-down {
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+@media (min-width: 1200px) {
+    article {
+        display: flex;
+        align-items: center;
+        width: 730px;
+        height: 300px;
+    }
+    .card-img {
+        height: 100%;
+        border-radius: 8px 0 0 8px;
+        overflow: hidden;
+    }
+
+    .card-img img {
+        width: 130%;
+    }
+
+    .icon-container {
+        top: -50px;
+        right: -75px;
+        min-width: 248px;
+        width: auto;
+        border-radius: 8px;
+        height: auto;
+        padding-block: 12.5px;
+        overflow: visible;
+    }
+
+    .arrow-down {
+        width: 0; 
+        height: 0; 
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid var(--color-very-dark-grayish-blue);
+        position: absolute;
+        bottom: -15px;
+        right: 100px;
+        display: block;
+      }
+
+    .icons {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+}
